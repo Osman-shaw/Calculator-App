@@ -1,8 +1,12 @@
 ****Calculator App — Project Description / ****
 **Overview**
-This Calculator App is a small, browser-based calculator built as a learning/personal project. It provides basic and common arithmetic operations with a simple UI and modular JavaScript code. The app's main goal is to solve the everyday problem of quickly performing calculations in a focused, minimal interface without needing to open a heavier tool or application.
+This Calculator App is a small, browser-based calculator built as a learning/personal project. 
+It provides basic and common arithmetic operations with a simple UI and modular JavaScript code. 
+The app's main goal is to solve the everyday problem of quickly performing calculations in a focused, 
+minimal interface without needing to open a heavier tool or application.
 **Problem statement**
-People often need a quick, reliable way to perform arithmetic (basic math, chained operations, decimal calculations) while working in the browser. The goal of this project was to:
+People often need a quick, reliable way to perform arithmetic (basic math, chained operations, decimal calculations) while working in the browser. 
+The goal of this project was to:
 
 Build a lightweight, fast, and responsive calculator UI.
 Implement a clear separation between UI and calculation logic so the core functionality is reusable and testable.
@@ -66,5 +70,6 @@ If you want automated tests, we can add a minimal test harness using Jest (Node)
 
 
 Edge cases considered:
+
 
 
