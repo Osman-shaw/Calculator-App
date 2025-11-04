@@ -51,49 +51,20 @@ main.js — DOM event wiring, display updates, and initialization
 sass — SCSS source files for styling (optional in build pipeline)
 (If you'd like, I can open any of these files to confirm the exact exports/function names and wire the README's usage section to them.)
 
-**How to run (Windows / Local)**
-Option 1 — Open in browser:
-Double-click index.html or right-click → Open with your browser.
-Option 2 — Run a simple static server (recommended while developing to avoid some browser file restrictions):
-Using Python (if installed):
-In PowerShell: python -m http.server 8000 (run from Calculator-App folder)
-Then open http://localhost:8000 in a browser.
-Using Node.js http-server (if installed):
-npx http-server -p 8000 from the Calculator-App folder
-Expected result: The app should load and buttons / keyboard should perform calculations.
-Usage examples
-Click 5, +, 3, = → display 8
-Click 7, *, 2, -, 3, = → computes left-to-right or according to implemented precedence (document the exact behavior based on your logic).
-Enter 5, ., 2, ., 1 → second . is ignored; final input 5.21
-Note: If the app implements operator precedence (multiplication/division before addition/subtraction), mention that in this section. If it does left-to-right evaluation, document that too. I can inspect Calculator.js to be explicit.
-
 **Tests & Validation ideas**
 Unit tests for calculation functions:
-add(2,3) => 5, subtract(5,2) => 3, multiply(4,0.5) => 2, divide(5,2) => 2.5
+add(2,3) => 5, subtract(5,2) => 3, 
+multiply(4,0.5) => 2, divide(5,2) => 2.5
 Chained scenarios and precedence: 2 + 3 * 4 => 14 (if precedence supported)
 Edge cases: divide-by-zero handling, decimal input sanitization.
 UI tests (manual):
 Keyboard input, rapid click sequences, delete/backspace behavior.
 If you want automated tests, we can add a minimal test harness using Jest (Node) or simple test scripts that import Calculations.js/Calculator.js.
 
-**Future improvements / Roadmap**
-Add keyboard shortcuts and more robust key handling.
-Add history or memory functions (M+, M-, MR, MC).
-Improve formatting for large numbers and rounding precision.
-Add a scientific mode with functions (sin, cos, pow) and parentheses parsing.
-Add unit tests and a small CI workflow (GitHub Actions).
-Package as a Progressive Web App (PWA) for offline use.
-**Notes and assumptions**
-I assumed Calculator.js and Calculations.js contain the main logic — if the files differ, I can adapt the doc to match exact module names and API.
-I assumed the app is client-side only (no backend).
-If you want a shorter summary or a version intended for GitHub landing page, say so and I’ll produce a concise README and a one-line project tagline.
-Next steps (pick one)
-Tell me any edits to the tone or content.
-I can create a README.md inside Calculator-App/ with this content.
-I can inspect Calculator.js and Calculations.js to add exact usage examples and function names, and optionally add simple unit tests.
-Completion summary: Draft created and ready for your feedback. If you want me to commit the README to the repo, say "create README" and I'll add it and run quick validations.
+
 
 
 
 Edge cases considered:
+
 
